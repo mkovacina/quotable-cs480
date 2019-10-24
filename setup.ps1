@@ -55,3 +55,13 @@ cd quotable.api.test
 dotnet add reference ..\quotable.api\quotable.api.csproj
 ## change directory back to the previous directory
 cd ..
+
+# grab a .gitignore file for c# projects
+## the Invoke-WebRequest command is similar to 'wget' or 'curl' in that you can use it to make
+## non-trivial HTTP requests from the command-line.  here we are using it to simply read a file
+## from github.com and store it.  also, the file shouldn't be overwritten if it already 
+## exists, for example if this script is being run in an already existing git repo.
+if ( -not (Test-Path .gitignore))
+{
+	Invoke-WebRequest https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore -OutFile .gitignore
+}
