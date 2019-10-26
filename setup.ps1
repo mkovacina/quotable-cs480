@@ -1,5 +1,5 @@
 # this is a powershell setup script that uses the 'dontnet' command to scaffold the
-# quotable project, including console, api, and test projects.
+# quotable project, including console, api, and tests projects.
 
 # how to run this
 ## 1. Launch a command prompt
@@ -18,14 +18,14 @@ dotnet new console --output quotable.console
 ## create the library project for quotable.core
 dotnet new classlib --output quotable.core
 
-## create the nunit test project for quotable.core
-dotnet new nunit --output quotable.core.test
+## create the nunit tests project for quotable.core
+dotnet new nunit --output quotable.core.tests
 
 ## create the aspnet.core project for the quotable.api
 dotnet new webapi --output quotable.api
 
-## create the nunit test project for the quotable.api
-dotnet new nunit --output quotable.api.test
+## create the nunit tests project for the quotable.api
+dotnet new nunit --output quotable.api.tests
 
 
 # setup the solution
@@ -39,19 +39,19 @@ dotnet new sln
 ### for example, "dotnet sln add quotable.console" will look for a ".csproj" file in the "quotable.console"
 dotnet sln add quotable.console
 dotnet sln add quotable.core
-dotnet sln add quotable.core.test
+dotnet sln add quotable.core.tests
 dotnet sln add quotable.api
-dotnet sln add quotable.api.test
+dotnet sln add quotable.api.tests
 
 ## add the project references that will already be known
 ### note that here we must put qualified paths to both the target and referenced project
 dotnet add quotable.console\quotable.console.csproj reference quotable.core\quotable.core.csproj
-dotnet add quotable.core.test\quotable.core.test.csproj reference quotable.core\quotable.core.csproj
+dotnet add quotable.core.tests\quotable.core.tests.csproj reference quotable.core\quotable.core.csproj
 dotnet add quotable.api\quotable.api.csproj reference quotable.core\quotable.core.csproj
 ## add the last reference in a different style
-## change directory (cd) to the quotable.api.test project
-cd quotable.api.test
-### but in this case it will find "quotable.api.test\quotable.api.test.csproj"
+## change directory (cd) to the quotable.api.tests project
+cd quotable.api.tests
+### but in this case it will find "quotable.api.tests\quotable.api.tests.csproj"
 dotnet add reference ..\quotable.api\quotable.api.csproj
 ## change directory back to the previous directory
 cd ..
@@ -61,7 +61,7 @@ cd ..
 ## non-trivial HTTP requests from the command-line.  here we are using it to simply read a file
 ## from github.com and store it.  also, the file shouldn't be overwritten if it already 
 ## exists, for example if this script is being run in an already existing git repo.
-if ( -not (Test-Path .gitignore))
+if ( -not (tests-Path .gitignore))
 {
 	Invoke-WebRequest https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore -OutFile .gitignore
 }
