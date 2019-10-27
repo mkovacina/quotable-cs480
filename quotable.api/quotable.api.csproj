@@ -20,4 +20,8 @@
     <ProjectReference Include="..\quotable.core\quotable.core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

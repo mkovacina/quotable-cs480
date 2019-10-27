@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>quotable.core</name>
+    </assembly>
+    <members>
+        <member name="T:quotable.core.RandomQuoteProvider">
+            <summary>
+            Defines the interface for a class that returns a specified number of random quotes.
+            </summary>
+        </member>
+        <member name="M:quotable.core.RandomQuoteProvider.GetRandomQuotes(System.Int64)">
+            <summary>
+            Returns a random sequence of quotes.
+            </summary>
+            <param name="numberOfQuotes">The number of quotes that should be returned.</param>
+            <returns>A sequence of quotes whose length is at most numberOfQuotes in length.</returns>
+            <remarks>
+            If the source of quotes does not have enough quotes to satisfy the requests, it is acceptable
+            to return fewer.
+            </remarks>
+        </member>
+    </members>
+</doc>
