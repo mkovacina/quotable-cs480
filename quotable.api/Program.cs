@@ -10,15 +10,11 @@ using Microsoft.Extensions.Logging;
 
 namespace quotable.api
 {
-	/// <summary>
-	/// 
-	/// </summary>
+	// this class doesn't need to be public for the runtime to execute it.
+	// thus i'm lazy and make it intenal (the default) so that I commenting
+	// the class and methods in it is not required unless I deem it necessary.
     class Program
     {
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="args"></param>
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
