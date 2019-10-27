@@ -9,4 +9,10 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <DocumentationFile>C:\Users\mkovacina\source\github\mkovacina\quotable-cs480\quotable.console\quotable.console.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
