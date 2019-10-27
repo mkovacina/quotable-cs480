@@ -1,4 +1,7 @@
-﻿using quotable.core;
+﻿// if you are wonder, this is not an original program concept...
+// https://en.wikipedia.org/wiki/Fortune_%28Unix%29
+
+using quotable.core;
 using System;
 
 namespace quotable.console
@@ -12,6 +15,7 @@ namespace quotable.console
 			// simply returning a single quote.
 
 			var numberOfQuotes = (long)1;
+
 			if (args.Length == 1 )
 			{
 				bool result = long.TryParse(args[0], out numberOfQuotes);
