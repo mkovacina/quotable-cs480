@@ -16,12 +16,17 @@ namespace quotable.console
 
 			var numberOfQuotes = (long)1;
 
+			if (args.Length > 1) goto usage;
+
 			if (args.Length == 1 )
 			{
 				bool result = long.TryParse(args[0], out numberOfQuotes);
 				
 				if (!result)
 				{
+					// yes c# has goto
+					// yes i'm using goto
+					// yes i'm okay with that
 					goto usage;
 				}
 			}
