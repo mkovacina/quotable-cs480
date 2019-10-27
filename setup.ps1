@@ -61,7 +61,7 @@ cd ..
 ## non-trivial HTTP requests from the command-line.  here we are using it to simply read a file
 ## from github.com and store it.  also, the file shouldn't be overwritten if it already 
 ## exists, for example if this script is being run in an already existing git repo.
-if ( -not (tests-Path .gitignore))
+if ( -not (Test-Path .gitignore))
 {
 	Invoke-WebRequest https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore -OutFile .gitignore
 }
