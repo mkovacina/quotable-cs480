@@ -3,15 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quotable.console", "quotable.console\quotable.console.csproj", "{0B064E02-CEF8-48DA-A4EA-3E1F2AF77E7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quotable.console", "quotable.console\quotable.console.csproj", "{0B064E02-CEF8-48DA-A4EA-3E1F2AF77E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quotable.core", "quotable.core\quotable.core.csproj", "{9DAE51E0-477C-4631-960A-917BB5FF6042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quotable.core", "quotable.core\quotable.core.csproj", "{9DAE51E0-477C-4631-960A-917BB5FF6042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quotable.core.tests", "quotable.core.tests\quotable.core.tests.csproj", "{9E59965F-E908-4D9E-802F-01B356BA4A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quotable.core.tests", "quotable.core.tests\quotable.core.tests.csproj", "{9E59965F-E908-4D9E-802F-01B356BA4A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quotable.api", "quotable.api\quotable.api.csproj", "{D84EAC21-C199-4356-9E92-6D795D054A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quotable.api", "quotable.api\quotable.api.csproj", "{D84EAC21-C199-4356-9E92-6D795D054A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quotable.api.tests", "quotable.api.tests\quotable.api.tests.csproj", "{52044083-3579-4AA1-A4FA-62041B3E4156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "quotable.api.tests", "quotable.api.tests\quotable.api.tests.csproj", "{52044083-3579-4AA1-A4FA-62041B3E4156}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "homework", "homework", "{558A0D8F-E97D-415A-9D89-F23EB3D6C755}"
+	ProjectSection(SolutionItems) = preProject
+		homework\hw-00.md = homework\hw-00.md
+		homework\hw-01.md = homework\hw-01.md
+		homework\hw-02.md = homework\hw-02.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0B064E02-CEF8-48DA-A4EA-3E1F2AF77E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +90,11 @@ Global
 		{52044083-3579-4AA1-A4FA-62041B3E4156}.Release|x64.Build.0 = Release|Any CPU
 		{52044083-3579-4AA1-A4FA-62041B3E4156}.Release|x86.ActiveCfg = Release|Any CPU
 		{52044083-3579-4AA1-A4FA-62041B3E4156}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB35A80E-2ECF-4D0A-9C5F-1F9E91AE51DB}
 	EndGlobalSection
 EndGlobal
