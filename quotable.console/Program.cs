@@ -31,7 +31,7 @@ namespace quotable.console
 			goto exit;
 
 			usage:
-			Console.Error.WriteLine("usage: dotnet quotable.console.Program [numberOfQuotes]");
+			Console.Error.WriteLine("usage: dotnet run [numberOfQuotes]");
 
 			exit:
 			return;
