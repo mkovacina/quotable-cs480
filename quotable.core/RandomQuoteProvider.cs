@@ -16,7 +16,7 @@ namespace quotable.core
 		/// <returns>A sequence of quotes whose length is at most numberOfQuotes in length.</returns>
 		/// <remarks>
 		/// If the source of quotes does not have enough quotes to satisfy the requests, it is acceptable
-		/// to return fewer.
+		/// to return fewer quotes than requested, or to repeat quotes.
 		/// </remarks>
 		IEnumerable<string> GetRandomQuotes(long numberOfQuotes = 0);
 	}
