@@ -26,6 +26,8 @@ namespace quotable.core
 		/// <inheritdoc/>
 		public IEnumerable<string> GetRandomQuotes(long numberOfQuotes = 0)
 		{
+			// [miko]
+			// how do we repeatably test against something that is random?
 			var random = new Random();
 
 			var largestInt = (int)Math.Min(numberOfQuotes, Quotes.Count);

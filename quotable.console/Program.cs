@@ -8,6 +8,8 @@ namespace quotable.console
 {
     class Program
     {
+		// [miko]
+		// how am i going to test the logic in the method since the main() method isn't simple
         static void Main(string[] args)
         {
 			// setting the number of quotes to 1 by default.
@@ -33,6 +35,8 @@ namespace quotable.console
 
 			var provider = new SimpleRandomQuoteProvider();
 
+			// [miko]
+			// how do we test for output?
 			foreach( var quote in provider.GetRandomQuotes(numberOfQuotes) )
 			{
 				Console.WriteLine(quote);

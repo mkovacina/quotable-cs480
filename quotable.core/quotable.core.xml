@@ -17,8 +17,16 @@
             <returns>A sequence of quotes whose length is at most numberOfQuotes in length.</returns>
             <remarks>
             If the source of quotes does not have enough quotes to satisfy the requests, it is acceptable
-            to return fewer.
+            to return fewer quotes than requested, or to repeat quotes.
             </remarks>
+        </member>
+        <member name="T:quotable.core.SimpleRandomQuoteProvider">
+            <summary>
+            A random quote provider that uses hardcoded quotes and will repeat quotes as needed.
+            </summary>
+        </member>
+        <member name="M:quotable.core.SimpleRandomQuoteProvider.GetRandomQuotes(System.Int64)">
+            <inheritdoc/>
         </member>
     </members>
 </doc>

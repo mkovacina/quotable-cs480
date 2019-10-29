@@ -4,17 +4,6 @@
         <name>quotable.api</name>
     </assembly>
     <members>
-        <member name="T:quotable.api.Program">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:quotable.api.Program.Main(System.String[])">
-            <summary>
-            
-            </summary>
-            <param name="args"></param>
-        </member>
         <member name="T:quotable.api.Startup">
             <summary>
             The Startup class that is responsible for configuring the Quotable APIs.
