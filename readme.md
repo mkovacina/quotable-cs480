@@ -1,0 +1,1 @@
+[![Build Status](https://dev.azure.com/michaelkovacina/michaelkovacina/_apis/build/status/mkovacina.quotable-cs480?branchName=master)](https://dev.azure.com/michaelkovacina/michaelkovacina/_build/latest?definitionId=1&branchName=master)
