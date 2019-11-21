@@ -27,3 +27,6 @@ steps:
     repository: 'michaelkovacina/quotable-cs480'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
