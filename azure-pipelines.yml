@@ -20,3 +20,9 @@ steps:
   inputs:
     command: 'test'
     projects: '**/*.tests.csproj'
+
+- task: Docker@2
+  inputs:
+    repository: 'michaelkovacina/quotable-cs480'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
